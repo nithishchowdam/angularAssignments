@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table text-center mt-5 mb-5 table-bordered table-striped table-info">
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email Id</th>
+        <th>Address</th>
+        </tr>
+        </thead>
+       <tbody>
+        <tr *ngFor="let usersObj of users">
+        <td>{{usersObj.id}}</td>
+        <td>{{usersObj.name}}</td>
+        <td>{{usersObj.username}}</td>
+        <td>{{usersObj.email}}</td>
+        <td>Street : {{usersObj.address.street}} , City :
+       {{usersObj.address.city}} , Suite : {{usersObj.address.suite}} ,
+       ZipCode : {{usersObj.address.zipcode}} </td>
+        </tr>
+       </tbody>
+    </table>   
+</div>

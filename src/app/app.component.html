@@ -1,0 +1,56 @@
+<div class="container-fluid bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " routerLink="home" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products" routerLinkActive="active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contactus" routerLinkActive="active">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="users" routerLinkActive="active">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="details" routerLinkActive="active">Details</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<hr class="text-danger">
+  <router-outlet></router-outlet>
+  <div class="row bg-danger py-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+      <h6>Our Locations :</h6>
+      <h6>Hyderabad | Mumbai | Pune</h6>
+      <h6>Delhi | Chennai | Bangalore</h6>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <h6>Follow Us:</h6>
+      <h6 > <i class="fab fa-instagram p-2"> </i> 
+          <i class="fab fa-twitter p-2"> </i>
+          <i class="fab fa-facebook p-2"></i>
+  
+       </h6>
+      <h6>Contact : 040-0000000000 </h6>
+    </div>
+    <div class="col-sm-1"></div>  
+  </div>
+</div>

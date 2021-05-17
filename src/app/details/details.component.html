@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table text-primary table-bordered text-center mt-5 mb-5">
+        <thead>
+        <tr class="text-danger">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Colour</th>
+        <th>Pantone value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let detailsObj of details.data">
+        <td >{{detailsObj.id}} </td>
+        <td >{{detailsObj.name}} </td>
+        <td >{{detailsObj.year}} </td>
+        <td ><p style="background-color:{{detailsObj.color}};"
+       class="p-4"></p> </td>
+        <td>{{detailsObj.pantone_value}}</td>
+        </tr>
+        </tbody>
+       </table>       
+</div>
